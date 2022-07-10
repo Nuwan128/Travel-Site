@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+
+    
+    --shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* header */
+#home nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+     /* position: fixed;   */
+    height: 50px;
+    
+    
+}
+
+
+
+#home{
+    background: url(/Travel-Site/img/bg5.png)rgba(0, 0, 0, 0.19);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: rgb(255, 255, 255);  
+    
+}
+
+
+#headings{
+    display: flex;
+    justify-content: space-between;
+}
+
+#bar-item{
+    display: flex;
+    margin-right: 50px;
+}
+#bar-item li{
+    list-style: none;
+    padding: 10px;
+    font-family: roboto;
+    font-weight: 300;    
+    } 
+
+#bar-item a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+ #bar-item a:hover{
+        color:rgb(238, 23, 23);
+}
+#logo{
+    padding-top: 10px;
+    
+}
+
+
+
+#logo-line-1{
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: var(--shadow);
+
+}
+
+#logo-line-2{
+    font-size: 12px;
+    font-weight: lighter;
+    text-shadow: var(--shadow);
+    letter-spacing: 4px;
+    padding: auto;
+    margin-top: 0;
+
+}
+
+
+/* button */
+.btn{
+
+    overflow: hidden;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3 ease;
+    /* margin: auto; */
+    width: 140px;
+    height: 35px;
+    border-radius: 50px;;
+    padding: 10px 2px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: var(--light);
+    background: linear-gradient(0deg, rgb(215, 50, 96) 45% , rgb(235, 59, 112) 100%);
+    color: rgb(237, 237, 237);
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+    
+    
+}
+
+
+  .btn:hover {
+      
+      text-decoration: none;
+      color: #fff;
+  }
+  .btn:before {
+      
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: -180px; 
+      left: 0; 
+      width: 30px; 
+      height: 100%; 
+      background-color: white;
+      animation: anime-btn 3s ease-in-out infinite;
+
+      
+  }
+
+  @-webkit-keyframes anime-btn {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+  .btn:hover{
+    opacity: .7;
+  }
+  .btn:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  }
+
+/* home cntent */
+#home-content{
+    
+    
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 600px;
+    margin: 80px auto;
+}
+
+#home-content p{
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    /* text-align:center; */
+    margin-bottom: 20px;
+}
+
+#home-content h2{
+    font-size: 50px;
+    font-family:sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+#home-content hr {
+    border: 1px solid rgb(255, 255, 255);
+    width: 100px;
+    margin-bottom: 20px ;
+  }
