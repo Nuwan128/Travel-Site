@@ -18,7 +18,7 @@ imges[3] = "url('/img/4.png') rgba(0, 0, 0, 0.19)";
 
 //events
 btnDiv.addEventListener('click',changeRadio);
-// arrowDiv.addEventListener('click',arrowKeys);
+arrowDiv.addEventListener('click',arrowKeys);
 
 window.onload = changeImg;
 
@@ -38,7 +38,7 @@ function changeImg(){
             count++;
             btnLable[i].style.background = 'rgb(235, 59, 112)';
             btnLable[i].style.transform = 'scale(1.25)';
-            
+            // console.log(count);
         }
         else{
             btnLable[i].style.background = '';
@@ -81,21 +81,30 @@ function changeImg(){
         
     }
  }
-
-// //arrow keys
-// function arrowKeys(e){
-//     let img = 0;
-//     if(e.target.className == 'arrow leftBtn'){
-//         img = count--;
-//         console.log(count);
-//         bgImage.style.background = imges[img];
+ 
+//arrow keys
+function arrowKeys(e){
+    
+    
+    if(e.target.className == 'arrow-left'){
         
+        count = count - 2;
+        if(count >= 0){
+            
+            console.log(count);
+            bgImage.style.background = imges[count];
+        }
+        else{
+            console.log(count);
+            count = count + 4;
+            console.log(count);
+        }
+    }
+    else if(e.target.className == 'arrow-right'){
 
-//     }
-//     else if(e.target.className == 'arrow rightBtn'){
-//         img = count++;
-//         console.log(count);
-//         bgImage.style.background = imges[img];
+        console.log(count);
+        bgImage.style.background = imges[count];
        
-//     }
-// }
+    }
+    
+}
