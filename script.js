@@ -18,7 +18,7 @@ imges[3] = "url('/img/4.png') rgba(0, 0, 0, 0.19)";
 
 //events
 btnDiv.addEventListener('click',changeRadio);
-arrowDiv.addEventListener('click',arrowKeys)
+// arrowDiv.addEventListener('click',arrowKeys);
 
 window.onload = changeImg;
 
