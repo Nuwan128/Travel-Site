@@ -11,10 +11,10 @@ let count = 0;
 let time = 5000;
 let imges = [];
 
-imges[0] = "url('/img/1.png') rgba(0, 0, 0, 0.19)";
-imges[1] = "url('/img/2.png') rgba(0, 0, 0, 0.19)";
-imges[2] = "url('/img/3.png') rgba(0, 0, 0, 0.19)";
-imges[3] = "url('/img/4.png') rgba(0, 0, 0, 0.19)";
+imges[0] = "url('img/1.png') rgba(0, 0, 0, 0.19)";
+imges[1] = "url('img/2.png') rgba(0, 0, 0, 0.19)";
+imges[2] = "url('img/3.png') rgba(0, 0, 0, 0.19)";
+imges[3] = "url('img/4.png') rgba(0, 0, 0, 0.19)";
 
 //events
 btnDiv.addEventListener('click',changeRadio);
