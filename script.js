@@ -82,20 +82,20 @@ function changeImg(){
     }
  }
 
-//arrow keys
-function arrowKeys(e){
-    let img = 0;
-    if(e.target.className == 'arrow leftBtn'){
-        img = count--;
-        console.log(count);
-        bgImage.style.background = imges[img];
+// //arrow keys
+// function arrowKeys(e){
+//     let img = 0;
+//     if(e.target.className == 'arrow leftBtn'){
+//         img = count--;
+//         console.log(count);
+//         bgImage.style.background = imges[img];
         
 
-    }
-    else if(e.target.className == 'arrow rightBtn'){
-        img = count++;
-        console.log(count);
-        bgImage.style.background = imges[img];
+//     }
+//     else if(e.target.className == 'arrow rightBtn'){
+//         img = count++;
+//         console.log(count);
+//         bgImage.style.background = imges[img];
        
-    }
-}
+//     }
+// }
